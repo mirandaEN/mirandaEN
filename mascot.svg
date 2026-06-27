@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340">
+<defs>
+  <radialGradient id="body" cx="38%" cy="30%" r="65%">
+    <stop offset="0%" stop-color="#FFFFFF"/>
+    <stop offset="18%" stop-color="#D8E8FF"/>
+    <stop offset="50%" stop-color="#9AAEFF"/>
+    <stop offset="100%" stop-color="#7B6EF6"/>
+  </radialGradient>
+  <radialGradient id="armR" cx="80%" cy="30%" r="70%">
+    <stop offset="0%" stop-color="#D8E8FF"/>
+    <stop offset="60%" stop-color="#9AAEFF"/>
+    <stop offset="100%" stop-color="#7B6EF6"/>
+  </radialGradient>
+  <radialGradient id="armL" cx="20%" cy="30%" r="70%">
+    <stop offset="0%" stop-color="#D8E8FF"/>
+    <stop offset="60%" stop-color="#9AAEFF"/>
+    <stop offset="100%" stop-color="#7B6EF6"/>
+  </radialGradient>
+  <radialGradient id="legG" cx="40%" cy="25%" r="65%">
+    <stop offset="0%" stop-color="#C4D4FF"/>
+    <stop offset="100%" stop-color="#7B6EF6"/>
+  </radialGradient>
+  <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+    <stop offset="0%" stop-color="#0A0F20"/>
+    <stop offset="100%" stop-color="#030509"/>
+  </radialGradient>
+  <linearGradient id="dsk" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#2A1D0E"/>
+    <stop offset="100%" stop-color="#140E07"/>
+  </linearGradient>
+  <!-- Orb blur filters -->
+  <filter id="orb" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="38"/>
+  </filter>
+  <filter id="orbSm" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="22"/>
+  </filter>
+  <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="9" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <style>
+    @keyframes tw{0%,100%{opacity:.12}50%{opacity:.85}}
+    @keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    @keyframes bk{0%,86%,100%{transform:scaleY(1)}91%{transform:scaleY(.06)}}
+    @keyframes ch{
+      0%{transform:translateY(260px);opacity:0}
+      7%{transform:translateY(-16px);opacity:1}
+      11%{transform:translateY(6px)}
+      15%{transform:translateY(-5px)}
+      18%,100%{transform:translateY(0)}
+    }
+    @keyframes dk{
+      0%,38%{transform:translateY(90px);opacity:0}
+      54%,100%{transform:translateY(0);opacity:1}
+    }
+    @keyframes br{0%,100%{transform:scale(1)}50%{transform:scale(1.022)}}
+    @keyframes ra{
+      0%{transform:rotate(0deg)}
+      5%{transform:rotate(-68deg)}
+      12%{transform:rotate(-6deg)}
+      19%{transform:rotate(-68deg)}
+      26%{transform:rotate(-6deg)}
+      33%{transform:rotate(-68deg)}
+      38%{transform:rotate(-6deg)}
+      44%{transform:rotate(-68deg)}
+      50%{transform:rotate(24deg)}
+      57%{transform:rotate(24deg) translateY(-6px)}
+      65%{transform:rotate(24deg) translateY(0)}
+      73%{transform:rotate(24deg) translateY(-6px)}
+      81%{transform:rotate(24deg) translateY(0)}
+      89%{transform:rotate(24deg) translateY(-6px)}
+      97%,100%{transform:rotate(24deg) translateY(0)}
+    }
+    @keyframes la{
+      0%,44%{transform:rotate(0deg)}
+      50%{transform:rotate(-24deg)}
+      54%{transform:rotate(-24deg) translateY(-6px)}
+      62%{transform:rotate(-24deg) translateY(0)}
+      70%{transform:rotate(-24deg) translateY(-6px)}
+      78%{transform:rotate(-24deg) translateY(0)}
+      86%{transform:rotate(-24deg) translateY(-6px)}
+      94%,100%{transform:rotate(-24deg) translateY(0)}
+    }
+    @keyframes bb{
+      0%,5%{opacity:0;transform:scale(.6) translateY(12px)}
+      11%,35%{opacity:1;transform:scale(1) translateY(0)}
+      42%,100%{opacity:0;transform:scale(.8) translateY(-6px)}
+    }
+    @keyframes c1{0%,50%{opacity:0}60%,100%{opacity:1}}
+    @keyframes c2{0%,57%{opacity:0}67%,100%{opacity:1}}
+    @keyframes c3{0%,64%{opacity:0}74%,100%{opacity:1}}
+    @keyframes c4{0%,71%{opacity:0}81%,100%{opacity:1}}
+    @keyframes cr{0%,49%{opacity:1}50%,99%{opacity:0}100%{opacity:1}}
+    @keyframes sp{
+      0%,47%{opacity:0;transform:translateY(0)}
+      53%{opacity:.75;transform:translateY(-18px)}
+      72%,100%{opacity:0;transform:translateY(-42px)}
+    }
+    @keyframes orbPulse{0%,100%{opacity:.38}50%{opacity:.52}}
+  </style>
+</defs>
+
+<!-- BASE BG -->
+<rect width="600" height="340" fill="url(#bg)" rx="18"/>
+
+<!-- GLASSMORPHIC ORBS -->
+<circle cx="100" cy="100" r="140" fill="#7B6EF6" opacity=".42" filter="url(#orb)" style="animation:orbPulse 6s ease-in-out infinite"/>
+<circle cx="500" cy="80"  r="120" fill="#EC4899" opacity=".38" filter="url(#orb)" style="animation:orbPulse 7s ease-in-out infinite 1s"/>
+<circle cx="480" cy="280" r="110" fill="#06B6D4" opacity=".32" filter="url(#orb)" style="animation:orbPulse 5s ease-in-out infinite 2s"/>
+<circle cx="120" cy="300" r="90"  fill="#6366F1" opacity=".30" filter="url(#orb)" style="animation:orbPulse 8s ease-in-out infinite .5s"/>
+<circle cx="300" cy="60"  r="70"  fill="#A855F7" opacity=".25" filter="url(#orbSm)" style="animation:orbPulse 4.5s ease-in-out infinite 1.5s"/>
+<circle cx="550" cy="170" r="55"  fill="#F59E0B" opacity=".18" filter="url(#orbSm)" style="animation:orbPulse 6s ease-in-out infinite 3s"/>
+
+<!-- FROSTED GLASS CARD -->
+<rect x="18" y="14" width="564" height="312" fill="#ffffff" opacity=".04" rx="16"/>
+<rect x="18" y="14" width="564" height="312" fill="none" stroke="#ffffff" stroke-width="1" rx="16" opacity=".12"/>
+<!-- Subtle shine top edge -->
+<rect x="22" y="15" width="556" height="2" fill="#ffffff" opacity=".08" rx="1"/>
+
+<!-- STARS -->
+<circle cx="42"  cy="28"  r="1.5" fill="#fff" style="animation:tw 2.3s ease-in-out infinite"/>
+<circle cx="110" cy="18"  r="1"   fill="#fff" style="animation:tw 1.8s ease-in-out infinite .5s"/>
+<circle cx="190" cy="45"  r="1.8" fill="#fff" style="animation:tw 3s ease-in-out infinite 1s"/>
+<circle cx="440" cy="22"  r="1.5" fill="#fff" style="animation:tw 2.7s ease-in-out infinite .3s"/>
+<circle cx="520" cy="55"  r="1"   fill="#fff" style="animation:tw 2s ease-in-out infinite 1.5s"/>
+<circle cx="568" cy="18"  r="1.8" fill="#fff" style="animation:tw 2.5s ease-in-out infinite .8s"/>
+<circle cx="75"  cy="88"  r="1"   fill="#fff" style="animation:tw 3.2s ease-in-out infinite .2s"/>
+<circle cx="375" cy="65"  r="1.5" fill="#fff" style="animation:tw 1.9s ease-in-out infinite 1.2s"/>
+<circle cx="240" cy="30"  r="1.2" fill="#E0D4FF" opacity=".8" style="animation:tw 2.2s ease-in-out infinite .9s"/>
+<circle cx="490" cy="40"  r="1"   fill="#FFC4E8" opacity=".7" style="animation:tw 3.1s ease-in-out infinite .6s"/>
+
+<!-- FLOATING CODE SYMBOLS -->
+<text x="48"  y="172" font-family="monospace" font-size="16" fill="#C4BAFF" opacity=".4" style="animation:fl 4s ease-in-out infinite">{ }</text>
+<text x="36"  y="228" font-family="monospace" font-size="12" fill="#F9A8D4" opacity=".28" style="animation:fl 5.5s ease-in-out infinite 1s">&lt;/&gt;</text>
+<text x="526" y="182" font-family="monospace" font-size="14" fill="#A5F3FC" opacity=".32" style="animation:fl 3.8s ease-in-out infinite 1.5s">( )</text>
+<text x="534" y="238" font-family="monospace" font-size="11" fill="#C4BAFF" opacity=".25" style="animation:fl 4.8s ease-in-out infinite 2s">[ ]</text>
+
+<!-- CODING SPARKS -->
+<circle cx="345" cy="192" r="5"   fill="#A8C8FF" style="animation:sp 10s ease-in-out infinite"/>
+<circle cx="363" cy="178" r="3.5" fill="#F9A8D4" style="animation:sp 10s ease-in-out infinite 1.3s"/>
+<circle cx="328" cy="184" r="3"   fill="#A5F3FC" style="animation:sp 10s ease-in-out infinite .65s"/>
+
+<!-- DESK + LAPTOP -->
+<g style="animation:dk 10s ease infinite;transform-box:fill-box;transform-origin:center bottom">
+  <!-- Glass desk surface -->
+  <rect x="100" y="268" width="400" height="18" fill="url(#dsk)" rx="5"/>
+  <rect x="100" y="268" width="400" height="5"  fill="#3D2A15" rx="5"/>
+  <!-- Keyboard -->
+  <rect x="194" y="251" width="172" height="20" fill="#1A2540" rx="6"/>
+  <rect x="202" y="255" width="156" height="12" fill="#212E4E" rx="4"/>
+  <rect x="206" y="258" width="148" height="4"  fill="#1A2540" rx="2" opacity=".7"/>
+  <!-- Screen outer glow -->
+  <rect x="206" y="162" width="148" height="91" fill="#0A1A2E" rx="9"/>
+  <rect x="206" y="162" width="148" height="91" fill="none" stroke="#9AAEFF" stroke-width="1.5" rx="9" opacity=".7"/>
+  <rect x="211" y="167" width="138" height="81" fill="#080E20" rx="6"/>
+  <!-- Chrome bar -->
+  <rect x="211" y="167" width="138" height="8" fill="#0a0f1e" rx="4"/>
+  <circle cx="219" cy="171" r="2.5" fill="#FF5F57"/>
+  <circle cx="227" cy="171" r="2.5" fill="#FEBC2E"/>
+  <circle cx="235" cy="171" r="2.5" fill="#28C840"/>
+  <!-- Code lines -->
+  <g style="animation:c1 10s ease infinite"><rect x="216" y="182" width="70" height="5" fill="#9AAEFF" rx="2"/></g>
+  <g style="animation:c2 10s ease infinite">
+    <rect x="222" y="193" width="48" height="5" fill="#A5F3FC" rx="2"/>
+    <rect x="274" y="193" width="26" height="5" fill="#86EFAC" rx="2"/>
+  </g>
+  <g style="animation:c3 10s ease infinite"><rect x="216" y="204" width="84" height="5" fill="#C4BAFF" rx="2"/></g>
+  <g style="animation:c4 10s ease infinite">
+    <rect x="222" y="215" width="38" height="5" fill="#FDE68A" rx="2"/>
+    <rect x="216" y="226" width="7" height="8" fill="#E0D4FF" rx="1" style="animation:cr .8s step-end infinite"/>
+  </g>
+  <rect x="194" y="269" width="172" height="4" fill="#050A14" rx="2"/>
+</g>
+
+<!-- CHARACTER -->
+<g style="animation:ch 10s ease infinite;transform-box:fill-box;transform-origin:300px 200px">
+
+  <!-- LEFT ARM -->
+  <g style="transform-origin:100% 50%;transform-box:fill-box;animation:la 10s ease infinite">
+    <ellipse cx="228" cy="212" rx="28" ry="17" fill="url(#armL)"/>
+    <ellipse cx="217" cy="203" rx="9" ry="5" fill="#fff" opacity=".35"/>
+  </g>
+  <!-- RIGHT ARM -->
+  <g style="transform-origin:0% 50%;transform-box:fill-box;animation:ra 10s ease infinite">
+    <ellipse cx="372" cy="212" rx="28" ry="17" fill="url(#armR)"/>
+    <ellipse cx="383" cy="203" rx="9" ry="5" fill="#fff" opacity=".35"/>
+  </g>
+
+  <!-- Aura glow -->
+  <ellipse cx="300" cy="198" rx="94" ry="90" fill="#8B9EF8" opacity=".12" filter="url(#glow)"/>
+
+  <!-- BODY -->
+  <g style="transform-box:fill-box;transform-origin:center;animation:br 3.5s ease-in-out infinite">
+    <ellipse cx="300" cy="195" rx="84" ry="80" fill="url(#body)"/>
+    <ellipse cx="267" cy="156" rx="34" ry="24" fill="#fff" opacity=".52"/>
+    <ellipse cx="265" cy="157" rx="17" ry="11" fill="#fff" opacity=".42"/>
+    <ellipse cx="328" cy="167" rx="8"  ry="5"  fill="#fff" opacity=".20"/>
+    <ellipse cx="310" cy="265" rx="22" ry="7"  fill="#B8C8FF" opacity=".16"/>
+  </g>
+
+  <!-- LEGS -->
+  <ellipse cx="282" cy="268" rx="17" ry="12" fill="url(#legG)"/>
+  <ellipse cx="318" cy="268" rx="17" ry="12" fill="url(#legG)"/>
+  <ellipse cx="279" cy="261" rx="6" ry="4" fill="#fff" opacity=".28"/>
+  <ellipse cx="315" cy="261" rx="6" ry="4" fill="#fff" opacity=".28"/>
+
+  <!-- EYES (behind glasses) -->
+  <g style="transform-box:fill-box;transform-origin:center;animation:bk 5.2s ease-in-out infinite">
+    <ellipse cx="282" cy="194" rx="8" ry="11" fill="#1B2A6B"/>
+    <ellipse cx="282" cy="188" rx="2.8" ry="4" fill="#3A54CC" opacity=".45"/>
+    <ellipse cx="285" cy="186" rx="1.4" ry="2" fill="#fff" opacity=".5"/>
+  </g>
+  <g style="transform-box:fill-box;transform-origin:center;animation:bk 5.2s ease-in-out infinite .18s">
+    <ellipse cx="318" cy="194" rx="8" ry="11" fill="#1B2A6B"/>
+    <ellipse cx="318" cy="188" rx="2.8" ry="4" fill="#3A54CC" opacity=".45"/>
+    <ellipse cx="321" cy="186" rx="1.4" ry="2" fill="#fff" opacity=".5"/>
+  </g>
+
+  <!-- Smile -->
+  <path d="M292 215 Q300 222 308 215" stroke="#5B4FC4" stroke-width="2.2" fill="none" stroke-linecap="round" opacity=".7"/>
+</g>
+
+<!-- SPEECH BUBBLE -->
+<g style="animation:bb 10s ease infinite;transform-box:fill-box;transform-origin:406px 126px">
+  <rect x="352" y="104" width="110" height="42" fill="#fff" opacity=".88" rx="14"/>
+  <rect x="352" y="104" width="110" height="42" fill="none" stroke="#9AAEFF" stroke-width="1.2" rx="14" opacity=".5"/>
+  <polygon points="364,146 350,165 400,146" fill="#fff" opacity=".88"/>
+  <text x="365" y="130" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#1B2A6B">hi there! &#x1F44B;</text>
+</g>
+
+</svg>
