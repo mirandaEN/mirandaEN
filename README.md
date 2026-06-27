@@ -13,7 +13,10 @@
 
 ---
 
-<img align="right" width="320" src="https://github-readme-stats.vercel.app/api?username=mirandaEN&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&title_color=2E86AB&icon_color=A8D8EA&text_color=FFFFFF&bg_color=0D1B2A" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=mirandaEN&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&title_color=2E86AB&icon_color=A8D8EA&text_color=FFFFFF&bg_color=0D1B2A"/>
+  <img align="right" width="320" src="https://github-readme-stats.vercel.app/api?username=mirandaEN&show_icons=true&theme=vue&hide_border=true&count_private=true&include_all_commits=true&title_color=2E86AB&icon_color=2E86AB&text_color=1F3864&bg_color=FFFFFF"/>
+</picture>
 
 ### 👩‍💻 `whoami`
 
@@ -69,7 +72,10 @@ class Miranda:
 
 **🌌 AstroSentinel**
 
-[![Repo](https://github-readme-stats.vercel.app/api/pin/?username=mirandaEN&repo=astrosentinel&theme=tokyonight&hide_border=true&title_color=2E86AB&icon_color=A8D8EA&bg_color=0D1B2A)](https://github.com/mirandaEN/astrosentinel)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=mirandaEN&repo=astrosentinel&theme=tokyonight&hide_border=true&title_color=2E86AB&icon_color=A8D8EA&bg_color=0D1B2A"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=mirandaEN&repo=astrosentinel&theme=vue&hide_border=true&title_color=2E86AB&icon_color=2E86AB&bg_color=FFFFFF"/>
+</picture>
 
 ETL pipeline + dual ML models (classification & regression) trained on **NASA JPL data** to predict asteroid threat levels. IoT alerts via Particle Photon + Ubidots. Auto-generated PDF reports.
 
@@ -82,7 +88,10 @@ ETL pipeline + dual ML models (classification & regression) trained on **NASA JP
 
 **🔥 PyroGuard Nexus**
 
-[![Repo](https://github-readme-stats.vercel.app/api/pin/?username=mirandaEN&repo=pyroguard-nexxus&theme=tokyonight&hide_border=true&title_color=2E86AB&icon_color=A8D8EA&bg_color=0D1B2A)](https://github.com/mirandaEN/pyroguard-nexxus)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=mirandaEN&repo=pyroguard-nexxus&theme=tokyonight&hide_border=true&title_color=2E86AB&icon_color=A8D8EA&bg_color=0D1B2A"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=mirandaEN&repo=pyroguard-nexxus&theme=vue&hide_border=true&title_color=2E86AB&icon_color=2E86AB&bg_color=FFFFFF"/>
+</picture>
 
 IoT sensor network + AI dashboard for **72-hour wildfire risk prediction** using NASA FIRMS satellite data. Arduino/ESP32 nodes with solar power and LoRaWAN.
 
@@ -123,11 +132,17 @@ Production POS with integrated ML for **sales prediction and inventory progressi
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mirandaEN&layout=donut&theme=tokyonight&hide_border=true&title_color=2E86AB&bg_color=0D1B2A&langs_count=6" height="200"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=mirandaEN&layout=donut&theme=tokyonight&hide_border=true&title_color=2E86AB&bg_color=0D1B2A&langs_count=6"/>
+  <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mirandaEN&layout=donut&theme=vue&hide_border=true&title_color=2E86AB&bg_color=FFFFFF&langs_count=6"/>
+</picture>
 
 <br/>
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=mirandaEN&theme=tokyonight&hide_border=true&background=0D1B2A&ring=2E86AB&fire=A8D8EA&currStreakLabel=2E86AB)](https://git.io/streak-stats)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=mirandaEN&theme=tokyonight&hide_border=true&background=0D1B2A&ring=2E86AB&fire=A8D8EA&currStreakLabel=2E86AB"/>
+  <img src="https://streak-stats.demolab.com?user=mirandaEN&theme=vue&hide_border=true&background=FFFFFF&ring=2E86AB&fire=2E86AB&currStreakLabel=2E86AB&sideLabels=1F3864&dates=555555"/>
+</picture>
 
 </div>
 
@@ -135,7 +150,10 @@ Production POS with integrated ML for **sales prediction and inventory progressi
 
 <div align="center">
 
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=mirandaEN&theme=tokyo-night&bg_color=0D1B2A&color=A8D8EA&line=2E86AB&point=FFFFFF&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=mirandaEN&theme=tokyo-night&bg_color=0D1B2A&color=A8D8EA&line=2E86AB&point=FFFFFF&hide_border=true"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mirandaEN&theme=github&bg_color=FFFFFF&color=2E86AB&line=2E86AB&point=1F3864&hide_border=true"/>
+</picture>
 
 </div>
 
@@ -155,7 +173,10 @@ Production POS with integrated ML for **sales prediction and inventory progressi
 
 <div align="center">
 
-[![Trophies](https://github-profile-trophy.vercel.app/?username=mirandaEN&theme=tokyonight&no-frame=true&column=6&margin-w=8)](https://github.com/ryo-ma/github-profile-trophy)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=mirandaEN&theme=tokyonight&no-frame=true&column=6&margin-w=8"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=mirandaEN&theme=flat&no-frame=true&column=6&margin-w=8"/>
+</picture>
 
 </div>
 
